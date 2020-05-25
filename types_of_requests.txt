@@ -1,0 +1,91 @@
+*Initial request*:
+Please suggest me a movie.
+Please suggest me a film.       
+Can you suggest me a movie?
+Can you suggest me a film?
+I want to see a movie.
+I want to see a film.
+Recommend me a movie.
+Recommend me a film.        
+Can you recommend me a movie?
+Can you recommend me a film?
+
+*Movie genre*:
+Surprise me.
+I'd love to see a (genre).
+I'd love to see a (genre) movie.
+I'd love to see a (genre) film.
+Definitely a (genre) movie.
+Definitely a (genre) film.
+Definitely a (genre).
+I will choose a (genre).
+I will choose a (genre) movie.
+I will choose a (genre) film.
+I don't know, but I want to (sentiment).
+A/An (genre) movie.
+A/An (genre) film.
+
+*Movie year/period*:
+Surprise me.
+0/1/2 verbs from love, like, see, watch, choose, know, want
++
+A movie before (year).
+A film before (year).
+A movie after (year).
+A film after (year).
+Before (year)
+After (year)
+A new movie.
+An old movie.
+A movie from (year).
+A film from (year).
+
+*Movie runtime*:
+Surprise me.
+0/1/2 verbs from love, like, see, watch, choose, know, want
++
+A short movie.
+A short film.
+A long movie.
+A long film.
+A movie with a medium length.
+A film with a medium length.
+I want it to have less than 120 minutes.
+I want it to have more than 120 minutes.
+
+
+========================================================================================
+*Initial request structure*:
+verb noun
+verb verb noun
+
+*Request genre structure*:
+noun noun
+verb noun
+adv noun
+verb noun noun
+adv verb verb verb
+verb verb verb noun
+verb verb verb noun noun
+
+*Request year/period structure*:
+noun adp num
+verb noun adp num
+verb verb noun adp num
+adp num
+verb adp num
+verb verb adp num
+adj noun
+verb adj noun
+verb verb adj noun
+
+*Request runtime structure*:
+adj noun
+verb adj noun
+verb verb adj noun
+noun noun
+verb noun noun 
+verb verb noun noun
+adj num noun
+verb adj num noun 
+verb verb adj num noun
