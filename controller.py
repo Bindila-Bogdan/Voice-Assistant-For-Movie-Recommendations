@@ -14,6 +14,7 @@ class Controller:
         self.__message_label = application_view.get_message_label()
 
     def state_machine(self):
+        self.clean_interface()
         self.__message_label.configure(text="Make a request...")
         self.__view.get_window().update()
         self.__voice_engine.get_voice_output_initial()
@@ -75,6 +76,15 @@ class Controller:
         recommendation_info += "\nNumber of votes: " + recommendation[5]
         self.__recommendation_info_label.configure(text=recommendation_info)
 
+    def clean_interface(self):
+        self.__recommendation_label.configure(text="Movie recommendation", font=("fixedsys", "18", "bold"))
+        recommendation_info = "Year:"
+        recommendation_info += "\nDuration: "
+        recommendation_info += "\nGenre: "
+        recommendation_info += "\nRating: "
+        recommendation_info += "\nNumber of votes: "
+        self.__recommendation_info_label.configure(text=recommendation_info)
+
     def output_voice_button_listener(self):
         output_voice_button = self.__view.get_output_voice_button()
         output_voice_button.configure(command=self.change_output_voice)
@@ -93,7 +103,7 @@ class Controller:
 
 if __name__ == '__main__':
     view = View()
-    voice_recorder = VoiceEngine(True, False)
+    voice_recorder = VoiceEngine(True, True)
     controller = Controller(view, voice_recorder)
     controller.output_voice_button_listener()
     controller.input_voice_button_listener()
