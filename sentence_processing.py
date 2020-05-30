@@ -2,7 +2,6 @@ import nltk
 from string import punctuation
 from movie_data import MovieData
 from nltk.corpus import stopwords
-# nltk.download()
 
 
 class SentenceProcessing:
@@ -140,24 +139,28 @@ class SentenceProcessing:
             else:
                 recognized = False
         elif len(pos) == 2:
+            try:
+                desired_year = int(pos[1][0])
+            except ValueError:
+                return False
             cond1 = (pos[0][0] == "before" and pos[0][1] == "ADP") and (
-                    int(pos[1][0]) in years_copy and pos[1][1] == "NUM")
+                    desired_year in years_copy and pos[1][1] == "NUM")
             cond2 = (pos[0][0] == "after" and pos[0][1] == "ADP") and (
-                    int(pos[1][0]) in years_copy and pos[1][1] == "NUM")
+                    desired_year in years_copy and pos[1][1] == "NUM")
             cond3 = (pos[0][0] == "new" and pos[0][1] == "ADJ") and (pos[1][0] in synonyms and pos[1][1] == "NOUN")
             cond4 = (pos[0][0] == "old" and pos[0][1] == "ADJ") and (pos[1][0] in synonyms and pos[1][1] == "NOUN")
             cond5 = (pos[0][0] == "from" and pos[0][1] == "ADP") and (
-                    int(pos[1][0]) in years_copy and pos[1][1] == "NUM")
+                    desired_year in years_copy and pos[1][1] == "NUM")
             if cond1:
-                SentenceProcessing.__movie_data.set_selected_years_before(int(pos[1][0]))
+                SentenceProcessing.__movie_data.set_selected_years_before(desired_year)
             elif cond2:
-                SentenceProcessing.__movie_data.set_selected_years_after(int(pos[1][0]))
+                SentenceProcessing.__movie_data.set_selected_years_after(desired_year)
             elif cond3:
                 SentenceProcessing.__movie_data.set_selected_years_new()
             elif cond4:
                 SentenceProcessing.__movie_data.set_selected_years_old()
             elif cond5:
-                SentenceProcessing.__movie_data.set_selected_years([int(pos[1][0])])
+                SentenceProcessing.__movie_data.set_selected_years([desired_year])
             else:
                 recognized = False
         if recognized:
@@ -201,14 +204,18 @@ class SentenceProcessing:
             else:
                 recognized = False
         elif len(pos) == 3:
+            try:
+                desired_runtime = int(pos[1][0])
+            except ValueError:
+                return False
             cond1 = pos[0][0] == "less" and pos[0][1] == "ADJ" and pos[1][1] == "NUM" and pos[2][0] == "minutes" and \
-                    pos[2][1] == "NOUN"
+                pos[2][1] == "NOUN"
             cond2 = pos[0][0] == "more" and pos[0][1] == "ADJ" and pos[1][1] == "NUM" and pos[2][0] == "minutes" and \
-                    pos[2][1] == "NOUN"
+                pos[2][1] == "NOUN"
             if cond1:
-                SentenceProcessing.__movie_data.set_selected_runtimes_short(int(pos[1][0]))
+                SentenceProcessing.__movie_data.set_selected_runtimes_short(desired_runtime)
             elif cond2:
-                SentenceProcessing.__movie_data.set_selected_runtimes_long(int(pos[1][0]))
+                SentenceProcessing.__movie_data.set_selected_runtimes_long(desired_runtime)
             else:
                 recognized = False
         if recognized:

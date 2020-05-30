@@ -103,7 +103,7 @@ class Controller:
 
 if __name__ == '__main__':
     view = View()
-    voice_recorder = VoiceEngine(True, True)
+    voice_recorder = VoiceEngine(True, False)
     controller = Controller(view, voice_recorder)
     controller.output_voice_button_listener()
     controller.input_voice_button_listener()

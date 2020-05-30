@@ -46,7 +46,6 @@ class VoiceEngine:
                 found = SentenceProcessing.identify_request(parts_of_speech)
                 if found:
                     return True, False
-            return False, False
         if state == 2:
             if self.__no_audio_input:
                 self.__list_of_recognized_texts = ["surprise me"]
@@ -55,7 +54,6 @@ class VoiceEngine:
                 found = SentenceProcessing.identify_genre(parts_of_speech)
                 if found:
                     return True, False
-            return False, False
         if state == 3:
             if self.__no_audio_input:
                 self.__list_of_recognized_texts = ["surprise me"]
@@ -64,7 +62,6 @@ class VoiceEngine:
                 found = SentenceProcessing.identify_year(parts_of_speech)
                 if found:
                     return True, False
-            return False, False
         if state == 4:
             if self.__no_audio_input:
                 self.__list_of_recognized_texts = ["surprise me"]
@@ -73,7 +70,7 @@ class VoiceEngine:
                 found = SentenceProcessing.identify_runtime(parts_of_speech)
                 if found:
                     return True, False
-            return False, False
+        return False, False
 
     def configure_output_voice(self, male_voice):
         self.__tts.setProperty('rate', 150)
