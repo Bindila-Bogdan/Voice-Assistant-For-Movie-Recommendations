@@ -1,0 +1,73 @@
+*Link*
+https://www.youtube.com/watch?v=TI2BLaZ27Hw&feature=youtu.be
+================================================================================================================================================================================================================================================
+Input text: I want to see a movie
+Tokens: ['I', 'want', 'to', 'see', 'a', 'movie']
+Lowercase tokens: ['i', 'want', 'to', 'see', 'a', 'movie']
+Punctuation removed: ['i', 'want', 'to', 'see', 'a', 'movie']
+Parts of speech extracted: [('i', 'NOUN'), ('want', 'VERB'), ('to', 'PRT'), ('see', 'VERB'), ('a', 'DET'), ('movie', 'NOUN')]
+Stop words removed: [('want', 'VERB'), ('see', 'VERB'), ('movie', 'NOUN')]
+
+Input text: I don't know but I want to cry
+Tokens: ['I', 'do', "n't", 'know', 'but', 'I', 'want', 'to', 'cry']
+Lowercase tokens: ['i', 'do', "n't", 'know', 'but', 'i', 'want', 'to', 'cry']
+Punctuation removed: ['i', 'do', "n't", 'know', 'but', 'i', 'want', 'to', 'cry']
+Parts of speech extracted: [('i', 'NOUN'), ('do', 'VERB'), ("n't", 'ADV'), ('know', 'VERB'), ('but', 'CONJ'), ('i', 'VERB'), ('want', 'VERB'), ('to', 'PRT'), ('cry', 'VERB')]
+Stop words removed: [("n't", 'ADV'), ('know', 'VERB'), ('want', 'VERB'), ('cry', 'VERB')]
+Genres: ['drama', 'romance']
+
+Input text: before 2000
+Tokens: ['before', '2000']
+Lowercase tokens: ['before', '2000']
+Punctuation removed: ['before', '2000']
+Parts of speech extracted: [('before', 'ADP'), ('2000', 'NUM')]
+Stop words removed: [('before', 'ADP'), ('2000', 'NUM')]
+Years: [1971, 1972, 1973, 1974, 1974, 1975, 1975, 1975, 1975, 1976, 1976, 1976, 1977, 1977, 1978, 1978, 1978, 1979, 1980, 1980, 1980, 1981, 1982, 1982, 1983, 1984, 1984, 1984, 1984, 1985, 1986, 1986, 1987, 1987, 1987, 1987, 1988, 1988, 1988, 1988, 1988, 1989, 1989, 1989, 1989, 1990, 1990, 1990, 1990, 1990, 1991, 1991, 1992, 1992, 1992, 1992, 1993, 1993, 1993, 1993, 1993, 1993, 1993, 1993, 1994, 1994, 1994, 1994, 1994, 1994, 1994, 1994, 1994, 1994, 1995, 1995, 1995, 1995, 1995, 1995, 1995, 1995, 1995, 1996, 1996, 1996, 1996, 1996, 1996, 1996, 1997, 1997, 1997, 1997, 1997, 1997, 1997, 1997, 1997, 1997, 1997, 1997, 1997, 1997, 1997, 1998, 1998, 1998, 1998, 1998, 1998, 1998, 1998, 1998, 1998, 1998, 1998, 1998, 1999, 1999, 1999, 1999, 1999, 1999, 1999, 1999, 1999, 1999, 1999, 1999, 1999, 1999, 1999, 1999]
+
+Input text: short movie
+Tokens: ['short', 'movie']
+Lowercase tokens: ['short', 'movie']
+Punctuation removed: ['short', 'movie']
+Parts of speech extracted: [('short', 'ADJ'), ('movie', 'NOUN')]
+Stop words removed: [('short', 'ADJ'), ('movie', 'NOUN')]
+Runtimes: [93, 93, 102, 89, 104, 89, 96, 105, 99, 101, 88, 102, 101, 98, 94, 94, 98, 90, 103, 80, 84, 93, 97, 97, 100]
+
+Possible recommendations: ['Annie Hall', 'First Blood', 'The NeverEnding Story', 'Stand by Me', 'Big', 'Grave of the Fireflies', 'When Harry Met Sally...', 'Edward Scissorhands', 'Reservoir Dogs', 'Groundhog Day', 'The Lion King', 'The Crow', 'Before Sunrise', 'La Haine', 'Mallrats', 'Trainspotting', 'Fargo', 'Cube', 'The Truman Show', 'Run Lola Run', 'Pi', 'Rushmore', '10 Things I Hate About You', 'The Virgin Suicides', 'Payback']
+Recommendation details: ['Fargo', 1996, '98 min', 'Crime, Drama, Thriller', 8.1, '490,860']
+
+*Link*
+https://www.youtube.com/watch?v=WXuuaYvKWsU&feature=youtu.be
+================================================================================================================================================================================================================================================
+Input text: can you suggest me a film
+Tokens: ['can', 'you', 'suggest', 'me', 'a', 'film']
+Lowercase tokens: ['can', 'you', 'suggest', 'me', 'a', 'film']
+Punctuation removed: ['can', 'you', 'suggest', 'me', 'a', 'film']
+Parts of speech extracted: [('can', 'VERB'), ('you', 'PRON'), ('suggest', 'VERB'), ('me', 'PRON'), ('a', 'DET'), ('film', 'NOUN')]
+Stop words removed: [('suggest', 'VERB'), ('film', 'NOUN')]
+
+Input text: definitely a comedy movie
+Tokens: ['definitely', 'a', 'comedy', 'movie']
+Lowercase tokens: ['definitely', 'a', 'comedy', 'movie']
+Punctuation removed: ['definitely', 'a', 'comedy', 'movie']
+Parts of speech extracted: [('definitely', 'ADV'), ('a', 'DET'), ('comedy', 'NOUN'), ('movie', 'NOUN')]
+Stop words removed: [('definitely', 'ADV'), ('comedy', 'NOUN'), ('movie', 'NOUN')]
+Genres: ['comedy']
+
+Input text: before 2000
+Tokens: ['before', '2000']
+Lowercase tokens: ['before', '2000']
+Punctuation removed: ['before', '2000']
+Parts of speech extracted: [('before', 'ADP'), ('2000', 'NUM')]
+Stop words removed: [('before', 'ADP'), ('2000', 'NUM')]
+Years: [1973, 1974, 1974, 1975, 1977, 1979, 1980, 1980, 1983, 1983, 1984, 1984, 1985, 1987, 1987, 1987, 1988, 1988, 1989, 1989, 1989, 1990, 1990, 1992, 1992, 1992, 1993, 1993, 1994, 1994, 1994, 1994, 1994, 1994, 1995, 1995, 1996, 1996, 1997, 1997, 1997, 1997, 1997, 1998, 1998, 1998, 1998, 1998, 1998, 1998, 1998, 1999, 1999, 1999, 1999, 1999, 1999, 1999, 1999, 1999, 1999, 1999]
+
+Input text: surprise me
+Tokens: ['surprise', 'me']
+Lowercase tokens: ['surprise', 'me']
+Punctuation removed: ['surprise', 'me']
+Parts of speech extracted: [('surprise', 'VERB'), ('me', 'PRON')]
+Stop words removed: [('surprise', 'VERB')]
+Runtimes: [129, 106, 93, 91, 93, 94, 88, 133, 94, 116, 106, 105, 116, 96, 84, 121, 92, 104, 108, 128, 96, 103, 118, 90, 81, 94, 101, 102, 142, 107, 141, 92, 127, 117, 81, 94, 139, 92, 116, 98, 139, 89, 113, 103, 117, 107, 119, 95, 118, 123, 93, 92, 95, 112, 97, 124, 89, 130, 81, 114, 102, 118]
+
+Possible recommendations: ['The Sting', 'Young Frankenstein', 'Blazing Saddles', 'Monty Python and the Holy Grail', 'Annie Hall', 'Life of Brian', 'Airplane!', 'The Blues Brothers', 'A Christmas Story', 'Trading Places', 'Gremlins', 'Beverly Hills Cop', 'Back to the Future', 'Spaceballs', 'Evil Dead II', 'Good Morning, Vietnam', 'Beetlejuice', 'Big', 'Back to the Future Part II', 'Dead Poets Society', 'When Harry Met Sally...', 'Home Alone', 'Back to the Future Part III', 'Aladdin', 'Army of Darkness', "Wayne's World", 'Groundhog Day', 'Dazed and Confused', 'Forrest Gump', 'Dumb and Dumber', 'True Lies', 'Clerks', 'Ed Wood', 'Four Weddings and a Funeral', 'Toy Story', 'Mallrats', 'Jerry Maguire', 'Happy Gilmore', 'Life Is Beautiful', 'Men in Black', 'As Good as It Gets', 'Austin Powers: International Man of Mystery', 'Chasing Amy', 'The Truman Show', 'The Big Lebowski', 'Lock, Stock and Two Smoking Barrels', "There's Something About Mary", "A Bug's Life", 'Fear and Loathing in Las Vegas', 'Shakespeare in Love', 'Rushmore', 'Toy Story 2', 'American Pie', 'Being John Malkovich', '10 Things I Hate About You', 'Notting Hill', 'Office Space', 'Dogma', 'South Park: Bigger, Longer & Uncut', 'Three Kings', 'Galaxy Quest', 'Man on the Moon']
+Recommendation details: ['Clerks', 1994, '92 min', 'Comedy', 7.8, '188,598']

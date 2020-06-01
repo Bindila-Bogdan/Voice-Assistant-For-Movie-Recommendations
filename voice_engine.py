@@ -134,7 +134,7 @@ class VoiceEngine:
             self.question_three()
 
     def play_recommendation(self, recommendation, year):
-        self.__tts.say("The recommended movie is: {}, year {}. Enjoy!".format(recommendation, year))
+        self.__tts.say("The recommended movie is: {}, year {}.".format(recommendation, year))
         self.__tts.runAndWait()
 
     @staticmethod

@@ -56,7 +56,7 @@ class SentenceProcessing:
     @classmethod
     def identify_genre(cls, pos):
         genres = SentenceProcessing.__movie_data.get_genres()
-        verbs = ["'d", "love", "like", "see", "watch", "choose", "know", "want"]
+        verbs = ["would", "'d", "love", "like", "see", "watch", "choose", "know", "want"]
         actions = ["cry", "laugh"]
         adverbs = ["definitely", "n't"]
         synonyms = ["movie", "film"]
@@ -64,6 +64,8 @@ class SentenceProcessing:
         if len(pos) == 1:
             if pos[0][0] == "surprise" and pos[0][1] == "VERB":
                 SentenceProcessing.__movie_data.set_selected_genres(genres)
+            elif pos[0][0] in genres and pos[0][1] == "NOUN":
+                SentenceProcessing.__movie_data.set_selected_genres([pos[0][0]])
             else:
                 recognized = False
         elif len(pos) == 2:

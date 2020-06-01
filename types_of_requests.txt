@@ -1,33 +1,35 @@
 *Initial request*:
-Please suggest me a movie.
-Please suggest me a film.       
-Can you suggest me a movie?
-Can you suggest me a film?
-I want to see a movie.
-I want to see a film.
-Recommend me a movie.
-Recommend me a film.        
-Can you recommend me a movie?
-Can you recommend me a film?
+verbs from: recommend, suggest, can, tell, want, watch, see
+Please (verb) me a movie.
+Please (verb) me a film.       
+Can you (verb) me a movie?
+Can you (verb) me a film?
+I want to (verb) a movie.
+I want to (verb) a film.
+(verb) me a movie.
+(verb) me a film.        
+
 
 *Movie genre*:
+verbs from: would, 'd, love, like, see, watch, choose, know, want
 Surprise me.
-I'd love to see a (genre).
-I'd love to see a (genre) movie.
-I'd love to see a (genre) film.
-Definitely a (genre) movie.
-Definitely a (genre) film.
-Definitely a (genre).
-I will choose a (genre).
-I will choose a (genre) movie.
-I will choose a (genre) film.
+I (verb) to (verb) a (genre).
+I (verb) to (verb) a (genre) movie.
+I (verb) to (verb) a (genre) film.
+I (verb) (verb) to (verb) a (genre).
+I (verb) (verb) to (verb) a (genre) movie.
+I (verb) (verb) to (verb) a (genre) film.
+Definitely a/an (genre) movie.
+Definitely a/an (genre) film.
+Definitely a/an (genre).
 I don't know, but I want to (sentiment).
 A/An (genre) movie.
 A/An (genre) film.
+A/an (genre)
 
 *Movie year/period*:
 Surprise me.
-0/1/2 verbs from love, like, see, watch, choose, know, want
+0/1/2 verbs from: love, like, see, watch, choose, know, want
 +
 A movie before (year).
 A film before (year).
@@ -42,7 +44,7 @@ A film from (year).
 
 *Movie runtime*:
 Surprise me.
-0/1/2 verbs from love, like, see, watch, choose, know, want
+0/1/2 verbs from: love, like, see, watch, choose, know, want
 +
 A short movie.
 A short film.
@@ -50,9 +52,10 @@ A long movie.
 A long film.
 A movie with a medium length.
 A film with a medium length.
-I want it to have less than 120 minutes.
-I want it to have more than 120 minutes.
-
+I want it to have less than x minutes.
+I want it to have more than x minutes.
+less than x minutes.
+more than x minute
 
 ========================================================================================
 *Initial request structure*:
